@@ -6,7 +6,7 @@ class DiscoverTab extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
         return new Center(
-            child: new Text('discover'),
+            child: new Text('discover me'),
         );
     }
 
