@@ -5,6 +5,7 @@ import 'package:flutter_redux_boilerplate/styles/texts.dart';
 import 'package:flutter_redux_boilerplate/screens/main_tabs/news_tab.dart';
 import 'package:flutter_redux_boilerplate/screens/main_tabs/stats_tab.dart';
 import 'package:flutter_redux_boilerplate/screens/main_tabs/discover_tab.dart';
+import 'package:flutter_redux_boilerplate/screens/main_tabs/about_us_tab.dart';
 import 'package:flutter_redux_boilerplate/screens/main_drawer.dart';
 
 
@@ -58,7 +59,9 @@ class MainScreenState extends State<MainScreen> {
                 children: <Widget>[
                     new NewsTab(),
                     new StatsTab(),
-                    new DiscoverTab()
+                    new DiscoverTab(),
+                    new AboutUsTab()
+
                 ],
             ),
 
@@ -90,5 +93,6 @@ class TabItem {
 const List<TabItem> TabItems = const <TabItem>[
     const TabItem(title: 'News', icon: Icons.assignment),
     const TabItem(title: 'Statistics', icon: Icons.timeline),
-    const TabItem(title: 'Discover', icon: Icons.group_work)
+    const TabItem(title: 'Discover', icon: Icons.group_work),
+    const TabItem(title: 'About Us', icon: Icons.access_time)
 ];
